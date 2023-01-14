@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resta</title>
+</head>
+<script type="text/javascript">
+    function funcion_restar(){
+        var num = []
+        i = 0
+        fin = "s"
+        bucle = 0
+        while (bucle != fin){
+            num[i] = prompt("Ingrese valor")
+            if(i>=1){
+                resta = num[i-1] - num[i]
+                alert("La resta es: "+resta)
+                bucle = prompt("¿Ha terminado? (s/n)")
+                alert("numero guardado: "+num[i])
+            }
+            i = i+1
+        }
+    }
+</script>
+<body>
+    <h1>Programa para restar números</h1>
+    <button onclick="funcion_restar()">Iniciar</button>
+</body>
+</html>
